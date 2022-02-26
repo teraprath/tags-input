@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Quicksand", sans-serif;
+  color: #363636;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.tag-input {
+  width: 100%;
+  min-height: 4em;
+  outline: 0;
+  border: 2px solid #dbdbdb;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: .5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 50ms all;
+  transition: 50ms all;
+}
+
+.tag-input .tag-input__tag {
+  background-color: whitesmoke;
+  padding: .5em .75em;
+  border-radius: 4px;
+}
+
+.tag-input .tag-input__tag > span {
+  cursor: pointer;
+  opacity: 0.75;
+  margin-right: .25em;
+}
+
+.tag-input .tag-input__tag > span i {
+  color: #b5b5b5;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.tag-input .tag-input__tag > span i:hover {
+  color: #7a7a7a;
+}
+
+.tag-input .tag-input__text {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.tag-input::-webkit-input-placeholder {
+  font-family: "Quicksand", sans-serif;
+}
+
+.tag-input:-ms-input-placeholder {
+  font-family: "Quicksand", sans-serif;
+}
+
+.tag-input::-ms-input-placeholder {
+  font-family: "Quicksand", sans-serif;
+}
+
+.tag-input::placeholder {
+  font-family: "Quicksand", sans-serif;
+}
+
+.tag-input:hover {
+  border: 2px solid #b5b5b5;
+}
+
+.tag-input:focus {
+  border: 2px solid #b5b5b5;
+  outline: 1px solid #00d1b2;
+}

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+// Fonts
+$font: 'Quicksand', sans-serif;
+
+// Colors
+$primary: hsl(171, 100%, 41%);
+$link: hsl(217, 71%, 53%);
+$info: hsl(204, 86%, 53%);
+$success: hsl(141, 53%, 53%);
+$warning: hsl(48, 100%, 67%);
+$danger: hsl(348, 100%, 61%);
+
+$white: hsl(0, 0%, 100%);
+$white-ter: hsl(0, 0%, 96%);
+$grey-lighter: hsl(0, 0%, 86%);
+$grey-light: hsl(0, 0%, 71%);
+$grey: hsl(0, 0%, 48%);
+$grey-dark: hsl(0, 0%, 29%);
+$grey-darker: hsl(0, 0%, 21%);
+$black-ter: hsl(0, 0%, 14%);
+$black: hsl(0, 0%, 4%);
+
+// Border-Radius-Level
+$border-radius-none: 0;
+$border-radius-level-1: 4px;
+$border-radius-level-2: 8px;
+$border-radius-level-3: 14px;
+$border-radius-level-4: 16px;
+$border-radius-level-5: 50%;
+$border-radius-level-6: 100%;
+
+* {
+    font-family: $font;
+    color: $grey-darker;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.tag-input {
+    width: 100%;
+    min-height: 4em;
+    outline: 0;
+    border: 2px solid $grey-lighter;
+    border-radius: $border-radius-level-2;
+    font-size: 1rem;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    align-items: center;
+
+    .tag-input__tag {
+        background-color: $white-ter;
+        padding: .5em .75em;
+        border-radius: $border-radius-level-1;
+    }
+
+    .tag-input__tag>span {
+        cursor: pointer;
+        opacity: 0.75;
+        margin-right: .25em;
+        i {
+            color: $grey-light;
+            transition: .1s;
+            &:hover { color: $grey; }
+        }
+    }
+
+    .tag-input__text {
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        background: none;
+        flex: 1;
+    }
+
+    transition: 50ms all;
+
+    // Pseudo Classes
+    &::placeholder {
+        font-family: $font;
+    }
+
+    &:hover {
+        border: 2px solid $grey-light;
+    }
+
+    &:focus {
+        border: 2px solid $grey-light;
+        outline: 1px solid $primary;
+    }
+}
